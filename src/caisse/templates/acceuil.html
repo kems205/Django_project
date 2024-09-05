@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="{% static 'css/aCCEUIL.css' %}">
+    {% csrf_token %}
+</head>
+<body>
+    <h1>BIENVENUE DANS L'ACCEUIL</h1>
+    <span class="insc">Cliquez <a href="{% url 'deconnexion' %}">ici</a> pour vous déconnecter</span>
+    
+</body>
+</html>
